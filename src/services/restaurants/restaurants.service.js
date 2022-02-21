@@ -10,7 +10,6 @@ export const RestaurantsRequest = (location) => {
 };
 
 export const restaurantsTransform = ({ results = [] }) => {
-  console.log(results);
   const mappedResults = results.map((restaurant) => {
     return {
       ...restaurant,
